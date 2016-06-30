@@ -37,24 +37,24 @@
 var AWS = require('aws-sdk');
 AWS.config.region = 'us-west-2'; /* Cada región es independiente de otras */
 
-AWS.config.update({
-    accessKeyId: "AKIAI2GZXTJHEM3VFKVA",
-    secretAccessKey: "omVxr1ZEgwMxaXeVUVuKNSCJS2WVlmXqoe7O4RLs",
-    "region": "us-west-2" 
-});
+// AWS.config.update({
+//     accessKeyId: "YOUR KEY ID HERE",
+//     secretAccessKey: "YOUR ACCESS KEY HERE",
+//     "region": "us-west-2" 
+// });
 
 var dynamodb = new AWS.DynamoDB();
 var docClient = new AWS.DynamoDB.DocumentClient();
 
 
 /* Crear tabla */
-myCreateTable();
+//myCreateTable();
 
 /* Obtener descripción de una tabla */
 //myDescribeTable();
 
 /* Obtener lista de nombres de todas las tablas */
-//myListTables();
+myListTables();
 
 /* Escribir un item a la tabla */
 //myPut();
